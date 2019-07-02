@@ -1,3 +1,5 @@
+package tela.manutencao;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,12 +10,14 @@
  *
  * @author Administrador
  */
-public class manutencaoprofessor extends javax.swing.JDialog {
+public class ManutencaoProfessor extends javax.swing.JDialog {
 
     /**
      * Creates new form manutencaoprofessor
+     * @param parent
+     * @param modal
      */
-    public manutencaoprofessor(java.awt.Frame parent, boolean modal) {
+    public ManutencaoProfessor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -129,7 +133,7 @@ public class manutencaoprofessor extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbnAdicionarActionPerformed
-        // TODO add your handling code here:
+        controlador.ControladorProfessor.inserir(this);// TODO add your handling code here:
     }//GEN-LAST:event_jbnAdicionarActionPerformed
 
     /**
@@ -149,20 +153,21 @@ public class manutencaoprofessor extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(manutencaoprofessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManutencaoProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(manutencaoprofessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManutencaoProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(manutencaoprofessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManutencaoProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(manutencaoprofessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManutencaoProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                manutencaoprofessor dialog = new manutencaoprofessor(new javax.swing.JFrame(), true);
+                ManutencaoProfessor dialog = new ManutencaoProfessor(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
