@@ -181,15 +181,15 @@ public class ManutencaoProfessor extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
     public javax.swing.JButton jbnAdicionar;
     public javax.swing.JButton jbnAlterar;
-    private javax.swing.JButton jbnCancelar;
+    public javax.swing.JButton jbnCancelar;
     public javax.swing.JButton jbnExcluir;
-    private javax.swing.JTextField jtfEndereco;
-    private javax.swing.JTextField jtfNome;
-    private javax.swing.JTextField jtfSobrenome;
+    public javax.swing.JTextField jtfEndereco;
+    public javax.swing.JTextField jtfNome;
+    public javax.swing.JTextField jtfSobrenome;
     // End of variables declaration//GEN-END:variables
 }
